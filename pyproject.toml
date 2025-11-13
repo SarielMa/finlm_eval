@@ -34,10 +34,12 @@ dependencies = [
     "scikit-learn>=0.24.1",
     "sqlitedict",
     # "torch>=1.8",
-    "torch>=1.8,<2.5",
+    #"torch>=1.8,<2.5",
+    "torch==2.5.1",
     "tqdm-multiprocess",
     #"transformers>=4.1",
-    "transformers>=4.1,<4.52",
+    # "transformers>=4.1,<4.52",
+    "transformers>=4.45,<4.52",
     "zstandard",
     "dill",
     "word2number",
@@ -77,7 +79,8 @@ sentencepiece = ["sentencepiece>=0.1.98"]
 sparseml = ["sparseml-nightly[llm]>=1.8.0.20240404"]
 testing = ["pytest", "pytest-cov", "pytest-xdist"]
 # vllm = ["vllm>=0.4.2"]
-vllm = ["vllm==0.6.3.post1"]
+# vllm = ["vllm==0.6.3.post1"]
+vllm = ["vllm==0.6.5"]
 zeno = ["pandas", "zeno-client"]
 # wandb = ["wandb>=0.16.3", "pandas", "numpy"]
 wandb = ["wandb>=0.16.3", "pandas", "numpy<2"]
