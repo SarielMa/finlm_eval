@@ -25,16 +25,19 @@ dependencies = [
     "evaluate>=0.4.0",
     "jsonlines",
     "numexpr",
-    "peft>=0.2.0",
+    # "peft>=0.2.0",
+    "peft==0.5.0",
     "pybind11>=2.6.2",
     "pytablewriter",
     "rouge-score>=0.0.4",
     "sacrebleu>=1.5.0",
     "scikit-learn>=0.24.1",
     "sqlitedict",
-    "torch>=1.8",
+    # "torch>=1.8",
+    "torch>=1.8,<2.5",
     "tqdm-multiprocess",
-    "transformers>=4.1",
+    #"transformers>=4.1",
+    "transformers>=4.1,<4.52",
     "zstandard",
     "dill",
     "word2number",
@@ -73,9 +76,11 @@ promptsource = ["promptsource>=0.2.3"]
 sentencepiece = ["sentencepiece>=0.1.98"]
 sparseml = ["sparseml-nightly[llm]>=1.8.0.20240404"]
 testing = ["pytest", "pytest-cov", "pytest-xdist"]
-vllm = ["vllm>=0.4.2"]
+# vllm = ["vllm>=0.4.2"]
+vllm = ["vllm==0.6.3.post1"]
 zeno = ["pandas", "zeno-client"]
-wandb = ["wandb>=0.16.3", "pandas", "numpy"]
+# wandb = ["wandb>=0.16.3", "pandas", "numpy"]
+wandb = ["wandb>=0.16.3", "pandas", "numpy<2"]
 gptqmodel = ["gptqmodel>=1.0.9"]
 japanese_leaderboard = ["emoji==2.14.0", "neologdn==0.5.3", "fugashi[unidic-lite]", "rouge_score>=0.1.2"]
 all = [
